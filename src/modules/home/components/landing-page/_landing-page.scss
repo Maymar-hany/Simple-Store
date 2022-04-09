@@ -1,0 +1,254 @@
+@import "~@/assets/styles/abstracts/variables";
+ .img-size{
+   width: 200px;
+   height: 400px;
+   position: relative;
+   -webkit-perspective: 800px;
+   perspective: 800px;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+   transform: scale(1);
+-webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+-webkit-transition: -webkit-transform .5s;
+transition: -webkit-transform .5s;
+-o-transition: transform .5s;
+transition: transform .5s;
+transition: transform .5s, -webkit-transform .5s; 
+cursor: pointer;
+-ms-touch-action: none;
+touch-action: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+   user-select: none;
+ }
+.img1{
+  width: 250px;
+  height: 450px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+}.imgMob{
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0; 
+}
+.home{
+    z-index: 2000;
+    position: relative;
+    cursor: pointer;
+}
+.mobmove{
+  transition: all 0.3s ease-in-out;
+  transform: translateX(30px);
+
+}
+.tabmove{
+  transition: all 0.3s ease-in-out;
+  transform: translatex(-20px);
+  animation-direction: alternate;
+}
+
+.conOfimg{
+    z-index: 0;
+}
+@keyframes changewidth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.mobiles{
+  display: flex;
+  justify-content: center;
+}
+.shape1{
+  width: 50px;
+  height: 50px;
+  border: rgb(47, 42, 134) 3px solid;
+  animation-duration: 12s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+}
+.arabTxt{
+  font-size: 6rem;
+    font-weight: bold;
+    line-height: 6rem;
+    color: rgb(47, 42, 134);
+}.bigTxt{
+  font-size: 6rem;
+    font-weight: bold;
+    line-height: 6rem;
+    color: #000;
+}
+.mob-img{
+  width: 100%;
+  height: 105vh;
+}
+.Txt{
+color: rgb(0, 135, 177);
+}
+.subTxt{
+  color: rgb(47, 42, 134);
+  padding: 10px 0px;
+}
+.pentagonTop{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 550px;
+  left: 40%;
+  animation-duration: 12s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+}
+.pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: rgb(47, 42, 134) transparent;
+}
+.pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent rgb(47, 42, 134);
+}
+.triangleTop {
+  left: 25px;
+  top: 150px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation-duration: 12s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+}
+.triangle{
+  border-bottom:solid 50px rgb(0, 135, 177);
+  border-right:solid 30px transparent;
+  border-left:solid 30px transparent;
+}
+
+.stroke-text{
+    -webkit-text-stroke:1px #fff;
+    -webkit-text-fill-color:transparent;
+    
+  }
+  .home-sec{
+    overflow: hidden;
+    height: 100%;
+    position: relative;  }
+  .menuTxt{
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 4.5rem;
+    line-height: 8rem;
+    position: fixed;
+  }
+  .menuMobTxt{
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase; 
+    font-size: 2.8rem;
+    padding-left: 5%;
+    padding-top: 3%;
+  }
+  .menuTxt01{
+  bottom: 20%;
+    right: 2%; 
+  }
+  .menuTxt02{
+    right: 12%; 
+    bottom: 19%;
+
+  }
+  .menuTxt03{
+    bottom: 30%;
+
+    right: 16%; 
+  }
+  .menuTxt04{
+    bottom: 12%;
+
+    right: 34%; 
+  }
+  .leftlogo{
+      width: 12%;
+      padding-left: 2%;
+      z-index: 2;
+      
+  }
+  .headLeftTxt{
+    display: flex;
+    justify-content: center;
+    color: #352e7f;
+    font-size: 3.5rem;
+    align-self: center;
+  }
+  .rollTxt{
+      padding-left: 5%;
+  }
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform:translateZ(0.01px);
+    transform: translateZ(0.01px);
+ 
+ -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+
+ -webkit-backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+  
+  visibility:visible;
+  backface-visibility: hidden; 
+  }
+  .back {
+    -webkit-transform: rotateY(180deg);
+
+    transform: rotateY(180deg);  }
+  .img-size:hover{
+    transform: rotateY(180deg);
+    transition: transform 700ms 400ms ease-out; 
+  }
+  .backMobTxt{
+    position: absolute;
+    top: 45px;
+    width: 160px;
+    left: 25px;
+    font-size: 0.9rem;
+  }
+  .backMobimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  }
+  @media only screen and (min-width: 1440px) {
+    .menuTxt03{
+        bottom: 28% !important;
+    
+        right: 16%; 
+      }
+  }

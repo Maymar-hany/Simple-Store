@@ -1,0 +1,118 @@
+@import "~@/assets/styles/abstracts/variables";
+
+.conOfLoginPage {
+
+  .conOfLoginForm {
+    .conBollutsImg {
+      img {
+        max-width: 300px;
+        width: 75%;
+      }
+    }
+
+    .formCard {
+
+      // border-radius: 0;
+      // border: 0;
+      // padding: 2rem;
+
+      .conOfFormSection {
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+
+        .loginHeader {
+          text-align: center;
+          img {
+            width: 80%;
+          }
+        }
+
+        .formInput {
+          color: #242021;
+
+          .v-input__slot {
+            box-shadow: none !important;
+          }
+
+          // fieldset {
+          //   box-shadow: none !important;
+          //   border: 1px solid #D4D4D4;
+          //   border-radius: 35px;
+          // }
+
+          label.v-label.v-label--active {
+            left: -4px !important;
+          }
+
+          .v-icon {
+            color: #a0a0a0;
+
+            &.primary--text {
+              color: #a0a0a0;
+            }
+          }
+        }
+      }
+
+      .forgetPass {
+        text-align: right;
+
+        a {
+          text-decoration: none;
+          color: #FEBF2C;
+          font-size: 1rem;
+        }
+      }
+
+      .btnLoginCon {
+        button.primaryBtn.loginBtn.v-btn {
+          min-width: 100% !important;
+          background: #FEBF2C;
+          min-height: 60px;
+          border-radius: 10px;
+          color: #000000;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+
+    }
+
+
+    .vaidMessage {
+      color: $color-primary;
+      font-size: .8rem;
+      text-align: center;
+    }
+
+    .v-messages__message,
+    .v-text-field.v-text-field--enclosed .v-text-field__details {
+      margin: 0;
+    }
+
+    .v-text-field .v-label {
+      font-size: 1rem;
+    }
+
+    .isHaveAccount {
+      // color: $color-text-gray125;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+
+// ::v-deep {
+//   .conOfLoginForm .primary--text {
+//     color: $color-text-primary !important;
+//     caret-color: $color-text-primary !important;
+//   }
+
+//   .v-text-field--outlined.v-input--is-focused fieldset, .v-text-field--outlined.v-input--has-state fieldset {
+//     border: 2px solid #FEBF2C;
+// }
+// }

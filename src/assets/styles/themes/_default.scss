@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+@font-face
+{
+    font-family: "bio";
+    src: url("~@/assets/fonts/bio-sans.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+html,
+body {
+  font-family: "bio";
+}
+
+.w-50{
+  width: 50% !important;
+}
+.w-25{
+  width: 25% !important;
+
+}
+.w-75{
+  width: 75% !important;
+
+}
+
+html {
+  font-size: 14px;
+  // overflow: auto;
+}
+
+
+
+.h-75{
+height: 75%!important;
+}
+.secondRow.row.align-center {
+  margin-top: -12px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 12px;
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  body .conOfAllFooterSection {
+    position: static;
+  }
+}
+
+
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: initial !important;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.9rem;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.9rem;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 0.9rem;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.9rem;
+}
+
+

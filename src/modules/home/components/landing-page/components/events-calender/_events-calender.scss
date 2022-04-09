@@ -1,0 +1,69 @@
+@import "~@/assets/styles/abstracts/variables";
+
+.eventSectionContainer {
+    .sectionHeader {
+        font-size: 2.5rem;
+        color: $color-secondary;
+        font-weight: bold;
+        span {
+            color: $color-primary
+
+        }
+    }
+    .conOfEvent {
+        background-color: $color-text-grayF7;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0px 10px 20px #c4c8d066;
+
+        .headerEv {
+            font-size: 1.5rem;
+            color: $color-text-gray33;
+            margin-bottom: 2rem
+        }
+        .conDate {
+            text-align: center;
+            .dateNum {
+                color: $color-primary;
+                font-size: 1rem;
+            }
+            .dateMon {
+                color: $color-text-gray33;
+                font-size: 1rem;
+
+            }
+        }
+        .contentEvent {
+            margin-bottom: 1.5rem;
+            .eventTitle {
+               font-size: 1.25rem; 
+               color: $color-black;
+               line-height: 1.3rem;
+            }
+            .eventDateTime {
+                font-size: 1rem;
+                color: rgba($color-black, .4);
+                margin-bottom: .5rem;
+            }
+            .imgEvent {
+                height: 185px;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 7px;
+            }
+        }
+    }
+    .postion-relative {
+        position: relative;
+    }
+    .loaderContainer {
+        background: inherit;
+    }
+
+
+}
+::v-deep {
+
+}

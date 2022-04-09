@@ -1,0 +1,24 @@
+@import "~@/assets/styles/abstracts/variables";
+
+.mediaCenterContainer {
+    overflow: hidden;
+
+    .carasualStyle {
+        margin: 0 15px;
+    }
+
+    .linkEvents {
+        cursor: pointer;
+
+        &.active {
+            border: 2px solid #B40F1F;
+            border-radius: 5px;
+            padding: .2rem;
+
+            img {
+                border-radius: 3px;
+
+            }
+        }
+    }
+}
